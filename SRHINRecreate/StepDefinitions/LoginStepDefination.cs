@@ -7,11 +7,12 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.DevTools.V133.Network;
 using SRHINRecreate.PageObject;
+using Reqnroll;
 
 
 namespace SRHINRecreate.StepDefinitions
 {
-    [Binding]
+    [Binding]   
     public class LoginStepDefination
     {
         private readonly IWebDriver _driver;
@@ -28,7 +29,7 @@ namespace SRHINRecreate.StepDefinitions
         [Given("on loading the url")]
         public void GivenOnLoadingTheUrl()
         {
-            _loginPage.LoadUrl("https://parentportaldev-gkd3c2cafzegb3de.centralindia-01.azurewebsites.net/");
+            _loginPage.LoadUrl("https://parentportaldev-gkd3c2cafzegb3de.centralindia-01.azurewebsites.net/login");
         }
 
         [When("passing the username and password")]
