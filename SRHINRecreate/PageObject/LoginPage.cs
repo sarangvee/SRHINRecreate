@@ -15,8 +15,8 @@ namespace SRHINRecreate.PageObject
             _driver = driver;
         }
 
-        private IWebElement Username => _driver.FindElement(By.Id(":r3:"));
-        private IWebElement Password => _driver.FindElement(By.Id(":r4:"));
+        private IWebElement Username => _driver.FindElement(By.Id(":r0:"));
+        private IWebElement Password => _driver.FindElement(By.Id(":r1:"));
         private IWebElement LoginButtonOnHomePage => _driver.FindElement(By.XPath("//button[normalize-space()='Login']")); 
         
         public void LoadUrl(string url)
