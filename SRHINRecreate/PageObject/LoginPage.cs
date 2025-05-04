@@ -34,6 +34,7 @@ namespace SRHINRecreate.PageObject
         public void ClickLoginButtonOnHomePage()
         {
             LoginButtonOnHomePage.Click();
+            Thread.Sleep(2000); // Wait for 2 seconds to allow the page to load
         }
 
     }
