@@ -21,6 +21,7 @@ namespace SRHINRecreate.PageObject
         
         public void LoadUrl(string url)
         {
+            
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl(url);
         }
