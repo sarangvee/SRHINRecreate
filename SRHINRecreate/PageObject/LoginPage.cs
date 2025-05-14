@@ -17,9 +17,10 @@ namespace SRHINRecreate.PageObject
 
         private IWebElement Username => _driver.FindElement(By.Id(":r0:"));
         private IWebElement Password => _driver.FindElement(By.Id(":r1:"));
-        private IWebElement LoginButtonOnHomePage => _driver.FindElement(By.XPath("//button[normalize-space()='Login']")); 
-        
+        private IWebElement LoginButtonOnHomePage => _driver.FindElement(By.XPath("//button[normalize-space()='Login']"));
+        private IWebElement LoginText => _driver.FindElement(By.XPath("//h5[contains(text(),'Login')]"));
         public void LoadUrl(string url)
+
         {
             
             _driver.Manage().Window.Maximize();
@@ -36,6 +37,11 @@ namespace SRHINRecreate.PageObject
         {
             LoginButtonOnHomePage.Click();
             Thread.Sleep(2000); // Wait for 2 seconds to allow the page to load
+        }
+
+        public string LoginHeder()
+        {
+           return LoginText.Text;
         }
 
     }

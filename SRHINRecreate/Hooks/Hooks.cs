@@ -31,6 +31,7 @@ namespace SRHINRecreate.Hooks
         public void AfterScenario()
         {
             _driver?.Quit();
+            _driver?.Dispose();
         }
     }
 }
