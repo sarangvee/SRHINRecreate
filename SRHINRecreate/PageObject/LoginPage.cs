@@ -21,8 +21,7 @@ namespace SRHINRecreate.PageObject
         private IWebElement LoginText => _driver.FindElement(By.XPath("//h5[contains(text(),'Login')]"));
         public void LoadUrl(string url)
 
-        {
-            
+        {            
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl(url);
         }

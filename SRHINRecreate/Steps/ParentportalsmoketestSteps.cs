@@ -13,7 +13,7 @@ using Reqnroll;
 namespace SRHINRecreate.StepDefinitions
 {
     [Binding]   
-    public class Parentportalsteps
+    public class Parentportalsmoketeststeps
     {
         private readonly IWebDriver _driver;
         private readonly LoginPage _loginPage;
@@ -25,7 +25,7 @@ namespace SRHINRecreate.StepDefinitions
         private readonly FeedbackPage _feedbackPage;
         private readonly FeesPage _feesPage;
 
-        public Parentportalsteps(IWebDriver driver)
+        public Parentportalsmoketeststeps(IWebDriver driver)
         {
             _driver = driver;
             _loginPage = new LoginPage(_driver);
